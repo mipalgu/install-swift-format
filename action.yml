@@ -23,7 +23,6 @@ runs:
         cd swift-format
         swift build -c release
         install .build/release/swift-format /usr/local/bin/
-        install .build/release/*.so* /usr/local/lib/
       shell: bash
 
     - name: Install swift-format
