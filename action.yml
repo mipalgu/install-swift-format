@@ -20,7 +20,7 @@ runs:
     - name: Install swift-format
       if: ${{ runner.os == 'Linux' }}
       run: |
-        cp swift-format
+        cd swift-format
         swift build -c release
         install .build/release/swift-format /usr/local/bin/
         install .build/release/*.so* /usr/local/lib/
@@ -29,7 +29,7 @@ runs:
     - name: Install swift-format
       if: ${{ runner.os == 'macOS' }}
       run: |
-        cp swift-format
+        cd swift-format
         swift build -c release
         install .build/release/swift-format /usr/local/bin/
         install .build/release/*.dylib* /usr/local/lib/
