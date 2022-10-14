@@ -26,7 +26,7 @@ runs:
         install .build/release/*.so* /usr/local/lib/
       shell: bash
 
-    - name: Install guunits
+    - name: Install swift-format
       if: ${{ runner.os == 'macOS' }}
       run: |
         cp swift-format
