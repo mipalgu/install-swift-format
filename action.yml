@@ -13,7 +13,7 @@ runs:
     - name: Clone swift-format
       uses: actions/checkout@v3
       with:
-        repository: apple/swift-format
+        repository: gilmourspace/swift-format
         ref: ${{ inputs.ref }}  
         path: swift-format
 
